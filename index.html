@@ -62,7 +62,8 @@
                         and making a positive impact on the lives of those in need.</p>
                     <input type="text" placeholder="Write Donation Amount"
                         class="border border-gray-300 w-full rounded-md py-4 pl-4">
-                    <button class="btn bg-[#B4F461] w-full text-black font-semibold text-xl">Donation Now</button>
+                    <button onclick="my_modal_1.showModal()"
+                        class="btn bg-[#B4F461] w-full text-black font-semibold text-xl">Donation Now</button>
                 </div>
             </div>
         </div>
@@ -84,7 +85,8 @@
                         those in urgent need.</p>
                     <input type="text" placeholder="Write Donation Amount"
                         class="border border-gray-300 w-full rounded-md py-4 pl-4">
-                    <button class="btn bg-[#B4F461] w-full text-black font-semibold text-xl">Donation Now</button>
+                    <button onclick="my_modal_1.showModal()"
+                        class="btn bg-[#B4F461] w-full text-black font-semibold text-xl">Donation Now</button>
                 </div>
             </div>
         </div>
@@ -98,13 +100,39 @@
                         <p><span>2400</span> BDT</p>
                     </div>
                     <h2 class="font-bold text-xl text-black">Aid for Injured in the Quota Movement</h2>
-                    <p class="font-light text-gray-500">The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
+                    <p class="font-light text-gray-500">The recent Quota movement has resulted in numerous injuries and
+                        significant hardship for many individuals. Your support is crucial in providing medical
+                        assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help
+                        ensure that injured individuals receive the care and support they need during this challenging
+                        time. Every donation plays a vital role in alleviating their suffering and aiding in their
+                        recovery. Please consider making a donation to support these brave individuals in their time of
+                        need.</p>
                     <input type="text" placeholder="Write Donation Amount"
                         class="border border-gray-300 w-full rounded-md py-4 pl-4">
-                    <button class="btn bg-[#B4F461] w-full text-black font-semibold text-xl">Donation Now</button>
+                    <button onclick="my_modal_1.showModal()"
+                        class="btn bg-[#B4F461] w-full text-black font-semibold text-xl">Donation Now</button>
                 </div>
             </div>
         </div>
+        <!-- Modal Part -->
+        <dialog id="my_modal_1" class="modal">
+            <div class="modal-box flex flex-col justify-center items-center space-y-3">
+                <h3 class="text-5xl font-bold">Congrates!</h3>
+                <img class="w-8 h-8" src="./assets/coin.png" alt="">
+                <p class="py-4">You Have Donated for Humankind</p>
+                <p class="py-4 text-black text-2xl font-semibold">Successfully</p>
+                <div class="modal-action">
+                    <form method="dialog">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button class="btn">Close confirmation</button>
+                    </form>
+                </div>
+            </div>
+        </dialog>
+        <!-- History Part -->
+        <section class="w-11/12 m-auto hidden">
+
+        </section>
     </main>
     <footer class="bg-[#F9F7F3] py-12"></footer>
 </body>
