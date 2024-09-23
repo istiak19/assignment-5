@@ -4,10 +4,13 @@ document.getElementById('btn-donation-card-1').addEventListener('click', functio
     const donationTk = getInputDonationMoney('card-1-donation-money')
     const totalAmount = getInputDonationMoney('total-amount')
 
-    // if (inputValue > totalAmount) {
-    //     alert('Invalid Donation Amount')
-    //     return
-    // }
+    // Validation part
+    if (inputValue <= 0 || inputValue > totalAmount || isNaN(inputValue)) {
+        alert('Invalid Donation Amount !')
+        return
+    }
+
+    // Calculation Part
     const totalDonation = inputValue + donationTk
     document.getElementById('card-1-donation-money').innerText = totalDonation
     const totalAmountIncrease = totalAmount - inputValue
@@ -28,9 +31,17 @@ document.getElementById('btn-donation-card-1').addEventListener('click', functio
 document.getElementById('btn-donation-card-2').addEventListener('click', function () {
     const inputValue = getInputFieldById('input-field-card-2')
     const donationTk = getInputDonationMoney('card-2-donation-money')
+    const totalAmount = getInputDonationMoney('total-amount')
+
+    // Validation part
+    if (inputValue <= 0 || inputValue > totalAmount || isNaN(inputValue)) {
+        alert('Invalid Donation Amount !')
+        return
+    }
+
+    // Calculation Part
     const totalDonation = inputValue + donationTk
     document.getElementById('card-2-donation-money').innerText = totalDonation
-    const totalAmount = getInputDonationMoney('total-amount')
     const totalAmountIncrease = totalAmount - inputValue
     document.getElementById('total-amount').innerText = totalAmountIncrease
 
@@ -49,9 +60,17 @@ document.getElementById('btn-donation-card-2').addEventListener('click', functio
 document.getElementById('btn-donation-card-3').addEventListener('click', function () {
     const inputValue = getInputFieldById('input-field-card-3')
     const donationTk = getInputDonationMoney('card-3-donation-money')
+    const totalAmount = getInputDonationMoney('total-amount')
+
+    // Validation part
+    if (inputValue <= 0 || inputValue > totalAmount || isNaN(inputValue)) {
+        alert('Invalid Donation Amount !')
+        return
+    }
+
+    // Calculation Part
     const totalDonation = inputValue + donationTk
     document.getElementById('card-3-donation-money').innerText = totalDonation
-    const totalAmount = getInputDonationMoney('total-amount')
     const totalAmountIncrease = totalAmount - inputValue
     document.getElementById('total-amount').innerText = totalAmountIncrease
 

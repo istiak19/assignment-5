@@ -25,22 +25,22 @@
 </head>
 
 <body>
-    <header>
+    <header class="sticky z-40 top-0">
         <!-- Navbar Part -->
         <nav class="bg-[#F9F7F3] flex justify-between py-6 px-2 sm:px-20 lg:px-32">
-            <button id="btn-blog"
-                class="btn bg-[#B4F461] font-semibold sm:text-xl text-[#111111] rounded-lg">Blog</button>
+            <button id="btn-blog" class="btn bg-[#B4F461] font-semibold sm:text-xl text-black rounded-lg">Blog</button>
             <div class="flex items-center gap-4">
                 <img src="./assets/logo.png" alt="">
-                <h3 class="font-semibold sm:text-xl text-[#111111]">Donate Bangladesh</h3>
+                <h3 class="font-semibold sm:text-xl text-black">Donate Bangladesh</h3>
             </div>
             <div class="flex items-center gap-2">
                 <img src="./assets/coin.png" alt="">
-                <p class="font-medium sm:text-xl text-[rgb(17,17,17,0.7)]"><span id="total-amount">10000</span> BDT</p>
+                <p class="font-medium sm:text-xl text-[rgb(17,17,17,0.7)]"><span id="total-amount">10000</span> BDT
+                </p>
             </div>
         </nav>
         <!-- Donation & History Button -->
-        <div class="text-center mt-20 mb-8">
+        <div class="text-center pt-10 pb-5 mb-8 bg-gray-50">
             <button id="btn-donation" class="btn bg-[#B4F461] text-black font-semibold text-xl">Donation</button>
             <button id="btn-history"
                 class="btn border border-gray-400 font-semibold text-xl text-gray-500">History</button>
@@ -122,7 +122,7 @@
                             need.</p>
                         <input type="text" id="input-field-card-3" placeholder="Write Donation Amount"
                             class="border border-gray-300 w-full rounded-md py-4 pl-4">
-                        <button id="btn-donation-card-3" onclick="my_modal_1.showModal()"
+                        <button id="btn-donation-card-3"
                             class="btn bg-[#B4F461] w-full text-black font-semibold text-xl">Donation Now</button>
                     </div>
                 </div>
@@ -145,7 +145,7 @@
         </section>
         <!-- History Part -->
         <section id="history-container" class="hidden">
-            
+
         </section>
     </main>
     <footer class="bg-[#F9F7F3] py-12"></footer>
