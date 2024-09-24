@@ -2,14 +2,13 @@
 
 document.getElementById('btn-history').addEventListener('click', function () {
     // History Button
-    const historyButton = document.getElementById('btn-history')
+    const historyButton = inputElement('btn-history')
     historyButton.classList.remove('text-gray-500', 'border', 'border-gray-400')
     historyButton.classList.add('bg-[#B4F461]', 'text-black');
-    document.getElementById('donation-container').classList.add('hidden')
-    document.getElementById('history-container').classList.remove('hidden')
+    inputElementHidden('history-container')
 
     // Donation Button
-    const donationButton = document.getElementById('btn-donation');
+    const donationButton = inputElement('btn-donation');
     donationButton.classList.remove('bg-[#B4F461]', 'text-black');
     donationButton.classList.add('text-gray-500', 'border', 'border-gray-400')
 })
@@ -18,14 +17,13 @@ document.getElementById('btn-history').addEventListener('click', function () {
 
 document.getElementById('btn-donation').addEventListener('click', function () {
     // Donation Button
-    const donationButton = document.getElementById('btn-donation');
+    const donationButton = inputElement('btn-donation');
     donationButton.classList.add('bg-[#B4F461]', 'text-black')
     donationButton.classList.remove('text-gray-500', 'border', 'border-gray-400')
-    document.getElementById('donation-container').classList.remove('hidden')
-    document.getElementById('history-container').classList.add('hidden')
+    inputElementHidden('donation-container')
 
     // History Button
-    const historyButton = document.getElementById('btn-history');
+    const historyButton = inputElement('btn-history');
     historyButton.classList.remove('bg-[#B4F461]', 'text-black');
     historyButton.classList.add('text-gray-500', 'border', 'border-gray-400')
 })
